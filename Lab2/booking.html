@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip | Wanderlust Travels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="index.html">Wanderlust Travels ✈️</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li class="current"><a href="booking.html">Booking</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Plan Your Adventure</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="travel-date">Preferred Travel Date:</label>
+                <input type="date" id="travel-date" name="travel-date" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Choose Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="paris">Paris, France</option>
+                    <option value="kyoto">Kyoto, Japan</option>
+                    <option value="santorini">Santorini, Greece</option>
+                    <option value="cairo">Cairo, Egypt</option>
+                    <option value="swiss-alps">Swiss Alps</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="package">Select Package Tier:</label>
+                <select id="package" name="package">
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium (All-Inclusive)</option>
+                    <option value="luxury">Luxury VIP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Booking Request</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>Wanderlust Travels &copy; 2025</p>
+    </footer>
+</body>
+</html>
