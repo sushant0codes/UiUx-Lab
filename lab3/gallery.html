@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - College Fest 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Tech Fest 2025</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Photo Gallery</h2>
+        <p>A look back at some of the highlights from our previous events.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./pexels-simonptr-33607952.jpg" alt="Coding competition">
+            </div>
+            <div class="gallery-item">
+                <img src="./pexels-thisisengineering-3912959.jpg" alt="Robotics team">
+            </div>
+            <div class="gallery-item">
+                <img src="./pexels-rdne-7005756.jpg" alt="Awards ceremony">
+            </div>
+            <div class="gallery-item">
+                <img src="./pexels-bertellifotografia-3856037.jpg" alt="Workshop session">
+            </div>
+            <div class="gallery-item">
+                <img src="./pexels-pavel-danilyuk-8761634.jpg" alt="Participants networking">
+            </div>
+            <div class="gallery-item">
+                <img src="./pexels-yankrukov-9071749.jpg" alt="Gaming event">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 Tech Fest. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
