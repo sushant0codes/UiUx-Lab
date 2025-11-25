@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking - Wanderlust Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>Wanderlust Travel</h1>
+    </div>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="booking.html">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container form-section">
+      <h2>Book Your Trip</h2>
+
+      <form id="bookingForm">
+        <label for="fullName">Full name *</label>
+        <input id="fullName" name="fullName" type="text" required />
+
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="pkgSelect">Select Package *</label>
+        <select id="pkgSelect" required>
+          <!-- options filled by JS -->
+        </select>
+
+        <label for="checkIn">Check-in date *</label>
+        <input id="checkIn" type="date" required />
+
+        <label for="checkOut">Check-out date *</label>
+        <input id="checkOut" type="date" required />
+
+        <label for="guests">Number of guests *</label>
+        <input id="guests" type="number" min="1" max="10" value="1" required />
+
+        <label for="promo">Promo Code</label>
+        <input id="promo" type="text" placeholder="Optional: EARLYBIRD | SUMMER" />
+
+        <div class="estimator">
+          <p>Nights: <span id="nightsSpan">0</span></p>
+          <p>Subtotal: ₹<span id="subtotalSpan">0</span></p>
+          <p>Total (after discounts/fees): ₹<span id="totalSpan">0</span></p>
+        </div>
+
+        <button id="submitBtn" type="submit" disabled>Confirm Booking</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wanderlust Travel</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
